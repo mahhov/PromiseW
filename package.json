@@ -1,0 +1,20 @@
+{
+  "name": "promise-x",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [],
+  "author": "mahhov",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahhov/PromiseX.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mahhov/PromiseX/issues"
+  },
+  "homepage": "https://github.com/mahhov/PromiseX#readme",
+  "description": ""
+}
