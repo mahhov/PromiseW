@@ -1,5 +1,7 @@
 # PromiseW
 
+Thin wrapper over standard `promise` that adds 3 bool getters (`done`, `resolved`, `rejected`) and `resolve` and `reject` functions.
+
 ## API
 
 #### `bool proimseW.done`
@@ -22,13 +24,13 @@ Resolves `promiseW` with `value` iff `done` is `false`; i.e. neither `resolve` n
 
 Rejects `promiseW` with `value` iff `done` is `false`; i.e. neither `resolve` nor `reject` been invoked yet. 
 
-#### `PromiseW.then(function)`
+#### `PromiseW.then(function handler)`
 
-Same as `promise.then`.
+Same as `promise.then`. `done`, `resolved`, and `rejected` will be updated prior to invoking the `handler`.
 
-#### `promiseW.catch(function)`
+#### `promiseW.catch(function handler)`
 
-Same as `promise.catch`.
+Same as `promise.catch`. `done`, `resolved`, and `rejected` will be updated prior to invoking the `handler`.
 
 ## Examples
 
@@ -39,6 +41,7 @@ console.log(promiseW.done, promiseW.resolved, promiseW.rejected); // false, fals
 promiseW.resolve(5);
 console.log(promiseW.done, promiseW.resolved, promiseW.rejected); // true true, false 
 
+// PromiseW will prevent simple corruption.
 proimseW.reject(3);
 promiseW.resolved = false;
 promiseW.rejected = true;
