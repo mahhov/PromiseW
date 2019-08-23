@@ -1,8 +1,8 @@
 const assert = require('assert');
-const PromiseX = require('../src/PromiseX');
+const PromiseW = require('../src/PromiseW');
 
-let promise = new PromiseX();
-let promise2 = new PromiseX();
+let promise = new PromiseW();
+let promise2 = new PromiseW();
 
 assert(!promise.done);
 assert(!promise.resolved);

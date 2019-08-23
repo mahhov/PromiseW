@@ -1,4 +1,4 @@
-class PromiseX {
+class PromiseW {
 	constructor() {
 		let promise = new Promise((resolve, reject) => {
 			this.resolve = resolve;
@@ -32,4 +32,4 @@ class PromiseX {
 	}
 }
 
-module.exports = PromiseX;
+module.exports = PromiseW;

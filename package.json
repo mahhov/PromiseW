@@ -1,6 +1,6 @@
 {
-  "name": "promise-x",
-  "version": "1.0.0",
+  "name": "promise-w",
+  "version": "1.0.1",
   "main": "src/index.js",
   "scripts": {
     "test": "node test/test.js"
@@ -10,11 +10,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mahhov/PromiseX.git"
+    "url": "git+https://github.com/mahhov/PromiseW.git"
   },
   "bugs": {
-    "url": "https://github.com/mahhov/PromiseX/issues"
+    "url": "https://github.com/mahhov/PromiseW/issues"
   },
-  "homepage": "https://github.com/mahhov/PromiseX#readme",
+  "homepage": "https://github.com/mahhov/PromiseW#readme",
   "description": ""
 }
