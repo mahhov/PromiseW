@@ -1,7 +1,7 @@
 {
   "name": "promise-w",
-  "version": "1.0.1",
-  "main": "src/index.js",
+  "version": "1.0.2",
+  "main": "src/PromiseW.js",
   "scripts": {
     "test": "node test/test.js"
   },
