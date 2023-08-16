@@ -31,3 +31,10 @@ assert(!promise2.resolved);
 assert(promise2.rejected);
 assert.rejects(promise2);
 promise2.catch(value => assert.equal(value, 6));
+
+let promise3 = new PromiseW(r => r(7));
+assert(promise3.done)
+assert(promise3.resolved)
+assert(!promise3.rejected)
+assert.doesNotReject(promise3)
+promise3.then(value => assert.equal(value, 7));

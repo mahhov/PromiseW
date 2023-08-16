@@ -4,6 +4,10 @@ Thin wrapper over standard `promise` that adds 3 bool getters (`done`, `resolved
 
 ## API
 
+#### `proimseW.constructor([function executor])`
+
+Similar to a traditional `promise` constructor, except `executor` is optional.
+
 #### `bool proimseW.done`
 
 Returns true if either `resolve` or `reject` have been invoked.
